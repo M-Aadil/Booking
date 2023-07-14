@@ -1,0 +1,131 @@
+.navbar{
+  height: 90px;
+    background-color: #003580;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navContainer{
+  width: 82%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 20%;
+  cursor: pointer;
+  /* display: flex; */
+  /* justify-content: center; */
+  font-family: 'Righteous', cursive;
+  FONT-SIZE: x-large;
+  margin-top: 24px;
+  /* align-items: center; */
+  /* margin-left: 221PX; */
+
+}
+
+
+.logo img {
+    width: 38%;
+    border: 2px solid white;
+    border-radius: 120px;
+    /* align-self: normal; */
+    margin-left: -113px;
+    margin-top: 13px;
+    margin-bottom: 8px;
+}
+
+/* .logo{
+  font-weight: 500;
+} */
+
+.navButton{
+  margin-left: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #003580;
+}
+
+
+.loButton {
+
+  margin-left: 20px;
+  border: none;
+  padding: 5px 6px;
+  cursor: pointer;
+  color: #003580;
+  /* border: none;
+  padding: 10px 20px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px; */
+}
+
+/* .loButton:disabled{
+  background-color: #0071c28c;
+  cursor: not-allowed;
+} */
+
+
+.headerList {
+  width: 1024px;
+  display: flex;
+  gap: 60px;
+  /* max-width: 1024px; */
+  /* margin-bottom: 50px; */
+  position: sticky;
+}
+
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+headerListItem::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #eaeff6; /* Adjust the underline color */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.headerListItem:hover::after {
+  transform: scaleX(1);
+
+  /* border: 0.5px solid white; */
+  /* padding: 6px; */
+  /* border-radius: 20px; */
+  /* backgroundc-color: #1c54a1; */
+  color: #6299e6;
+  
+}  
+  /* .contact:hover {
+  
+  background-color: #1c54a1; 
+  color: #6299e6;
+
+  
+}  
+  .hotels:hover {
+  
+  color: #6299e6;
+  
+}   */
