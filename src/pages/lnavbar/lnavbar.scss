@@ -1,0 +1,66 @@
+.lnavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #003580;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .lnavbar-container {
+  max-width: 1200px;
+   /* margin: 0 auto; */
+  /* margin-left: 10%; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+/* } */ 
+
+.lnavbar-container {
+  max-width: 1570px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+}
+
+.login-logo {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  /* font-weight: bold; */
+  font-family: 'Righteous', cursive;
+  margin-right: 33px;
+}
+
+.lnav-links {
+  list-style: none;
+  display: flex;
+  gap: 43px;
+  /* margin-left: 62%; */
+  /* font-size: 16px;
+  /* margin-left: 62%; */
+  /* font-size: 16px; */
+}
+
+/* .lnav-links li {
+  margin-right: 53px;
+}
+ */
+.lnav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.lnav-links a:hover {
+  color: #c2d7db;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
