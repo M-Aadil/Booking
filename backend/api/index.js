@@ -9,6 +9,13 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 
 const app = express();
+app.use(cors(
+    {
+        origin: [""],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));  
 dotenv.config()
 
 const connect = async () => {
