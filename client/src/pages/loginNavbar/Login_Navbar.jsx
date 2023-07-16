@@ -15,7 +15,7 @@ const LoginNavbar = () => {
   return (
     <nav className="lnavbar">
       <div className="lnavbar-container">
-        <a href=''  className="login-logo" onClick={handleLogoClick}>Ebooking.com</a>
+        <button  className="login-logo" onClick={handleLogoClick}>Ebooking.com</button>
         <ul className="lnav-links">
           <li className="listItem"><FontAwesomeIcon icon={faBed} /><a href="/">Home</a></li>
           <li className="listItem"><FontAwesomeIcon icon={faAddressCard} /> <a href="/register">Register</a></li>

@@ -34,6 +34,8 @@
   font-family: 'Righteous', cursive;
   margin-right: 33px;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
   }
   
   .lnav-links {

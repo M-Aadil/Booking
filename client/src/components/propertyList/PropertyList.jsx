@@ -1,6 +1,6 @@
 import "./propertyList.css";
 import useFetch from "../../hooks/useFetch";
-import { useState } from "react";
+// import { useState } from "react";
 
 const PropertyList = ({ onClick }) => {
 
@@ -10,7 +10,7 @@ const PropertyList = ({ onClick }) => {
   //   window.scrollTo({ top: 0, behavior: 'smooth' });
   //   setShowMessage(true);
   // };
-  const {data,loading,error} = useFetch("/hotels/countByType");
+  const {data,loading} = useFetch("/hotels/countByType");
 
   const images = [
     "https://cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=",

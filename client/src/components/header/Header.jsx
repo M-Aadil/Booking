@@ -1,12 +1,10 @@
 import {
-  faAddressBook,
   faBed,
   faCalendarDays,
-  faHotel,
   faPerson,
 
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./header.css";
 import { DateRange } from "react-date-range";
@@ -17,7 +15,7 @@ import { format } from "date-fns";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { SearchContext } from "../../context/SearchContext";
-import { AuthContext } from "../../context/AuthContext";
+// import { AuthContext } from "../../context/AuthContext";
 
 const Header = ({ type, handleNavbarClick }) => {
   const [destination, setDestination] = useState("");
@@ -37,7 +35,7 @@ const Header = ({ type, handleNavbarClick }) => {
   });
 
   const navigate = useNavigate();
-  const { user } = useContext(AuthContext);
+  // const { user } = useContext(AuthContext);
 
   const handleOption = (name, operation) => {
     setOptions((prev) => {

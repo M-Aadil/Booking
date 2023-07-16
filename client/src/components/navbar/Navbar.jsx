@@ -7,9 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAddressBook,
   faBed,
-  faCalendarDays,
   faHotel,
-  faPerson,
+  
 
 } from "@fortawesome/free-solid-svg-icons";
 import { SearchContext } from "../../context/SearchContext";
@@ -34,35 +33,35 @@ const Navbar = ({ onClick, scrollToBottom }) => {
 
   // hotels button configuration
 
-  const [destination, setDestination] = useState("");
-  const [openDate, setOpenDate] = useState(false);
-  const [dates, setDates] = useState([
+  const [destination] = useState("");
+  // const [openDate, setOpenDate] = useState(false);
+  const [dates] = useState([
     {
       startDate: new Date(),
       endDate: new Date(),
       key: "selection",
     },
   ]);
-  const [openOptions, setOpenOptions] = useState(false);
-  const [options, setOptions] = useState({
+  // const [openOptions, setOpenOptions] = useState(false);
+  const [options] = useState({
     adult: 1,
     children: 0,
     room: 1,
   });
 
-  // const navigate = useNavigate();
+  // const navigate = useNavigate();c
   // const { user } = useContext(AuthContext);
 
-  const handleOption = (name, operation) => {
-    setOptions((prev) => {
-      return {
-        ...prev,
-        [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
-      };
-    });
-  };
+  // const handleOption = (name, operation) => {
+  //   setOptions((prev) => {
+  //     return {
+  //       ...prev,
+  //       [name]: operation === "i" ? options[name] + 1 : options[name] - 1,
+  //     };
+  //   });
+  // };
 
-  const { loading, error, dispatch } = useContext(AuthContext, SearchContext);
+  const { dispatch } = useContext(AuthContext, SearchContext);
   const handlehotels = () => {
     dispatch({ type: "NEW_SEARCH", payload: { destination, dates, options } });
     navigate("/list", { state: { destination, dates, options } });
@@ -105,7 +104,7 @@ const Navbar = ({ onClick, scrollToBottom }) => {
     <div className="navbar">
       <div className="navContainer">
         <div>
-          <a href='' className="logo" onClick={onClick}>Ebooking.com</a>
+          <button href='' className="logo" onClick={onClick}>Ebooking.com</button>
         </div>
         <span>
         {user ? user.username : (<div className="navItems">
