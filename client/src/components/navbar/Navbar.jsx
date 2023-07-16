@@ -105,7 +105,7 @@ const Navbar = ({ onClick, scrollToBottom }) => {
     <div className="navbar">
       <div className="navContainer">
         <div>
-          <a className="logo" onClick={onClick}>Ebooking.com</a>
+          <a href='' className="logo" onClick={onClick}>Ebooking.com</a>
         </div>
         <span>
         {user ? user.username : (<div className="navItems">
