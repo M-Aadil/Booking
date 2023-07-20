@@ -1,5 +1,6 @@
 [[redirects]]
-  from = "https://ebooking7.netlify.app/*"
+  from = "/api/*"
   to = "https://ebooking.onrender.com/api/:splat"
   status = 200
   force = true
+
