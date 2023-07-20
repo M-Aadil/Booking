@@ -25,9 +25,7 @@ mongoose.connection.on("disconnected",()=> {
 })
 
 //middleware
-app.use(cors({
-  origin: ["http://localhost:8800", "https://ebooking.onrender.com"]
-}))
+app.use(cors())
 app.use(cookieParser())
 app.use(express.json())
 
